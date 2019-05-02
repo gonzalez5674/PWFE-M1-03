@@ -21,11 +21,17 @@ header{
 }
 header h1{
     color: #FFF;
-    margin: 0;
     float:left;
+    font-size: 28px;
+    font-weight: 700;  /* Estandar de negrita */
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 75px;
+    
 }
 header nav{
-    float: left;
+    float: right;
     padding: 10px;
 }
 header nav ul{
@@ -43,4 +49,15 @@ header nav a {
 header nav a:hover{
     color: #333;
     background-color:#FFF;
+}
+.main_picture{
+    padding-top: 1px;
+    width: 100%;
+}
+.main_text{
+    color:#FFF;
+    background-color:#333;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 10px;
 }
