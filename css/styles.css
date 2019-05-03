@@ -1,8 +1,9 @@
 /* Estilos Generales */
+/*
 *{
     outline: dotted 1px red;
 }
-
+*/
 body{
     font-family: Helvetica, Arial, Open Sans, sans-serif;
     font-size: 14px;
@@ -50,11 +51,25 @@ header nav a:hover{
     color: #333;
     background-color:#FFF;
 }
+/*
 .main_picture{
     padding-top: 1px;
     width: 100%;
 }
 .main_text{
+    color:#FFF;
+    background-color:#333;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 10px;
+}
+*/
+#noticias-destacadas img {
+    padding-top: 1px;
+    width: 100%;
+}
+
+#noticias-destacadas h2 {
     color:#FFF;
     background-color:#333;
     font-weight: 700;
