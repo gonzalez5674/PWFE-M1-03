@@ -76,21 +76,37 @@ header nav a:hover{
     font-size: 48px;
     padding: 15px 10px 10px 20px;
 }
-#ultimas-noticias {
+
+.noticia1 {
     display: inline-block;
     padding: 5px;
+    position: relative;
+    overflow: hidden;
 }
 
-#ultimas-noticias img {
-    float: left;
-    width: 30%;
-
+.noticia1 img {
+margin-left: 50px;
+margin-top: 20px;
+margin-right: 200px;
+float: left;
+width: 30%;
 }
-#ultimas-noticias h3 {
-    font-size: 32px;
+.contenedor{
+    position: absolute;
+    top: 5px;
+    left: 450px;
+    float: right;
+    width: 800px;
+    height: 168px;
+}
+
+.contenedor-superior{
     font-weight: 700;
+    font-size: 30px;
+    text-align: right center;
 }
 
-#ultimas-noticias p {
-    font-size: 16px;
+.contenedor-inferior{
+    font-size: 17px;
+    text-align: left;
 }
