@@ -154,3 +154,7 @@ hr {
     position: relative;
     overflow: hidden;
 }
+#tabla-posiciones {
+text-align: center;
+display: inline-table;
+}
