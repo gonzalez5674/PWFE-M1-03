@@ -26,8 +26,10 @@
 
 		<script>
 			document.querySelector("button").onclick = cargarProducto
+			
 			function cargarProducto(){
 				/**** Inicio cargarProducto() ****/
+				
 				/* Introdccion */
 				let nombre = prompt("Ingrese nombre:")       //<-- String: Valores Alfanuméricos
 				let stock = prompt("Ingrese stock:")         //<-- Int: Números Enteros
@@ -36,28 +38,42 @@
 				
 				/* Nudo */
 				while( nombre == "" || nombre == null || nombre == undefined ){
+					
 					alert("ERROR: El nombre no puede quedar vacio...")
 					nombre = prompt("Ingrese Nombre:")
 					
-					return
 				}
 
 				if( precio == "" || precio < 0 || parseFloat(precio) == NaN ) {
+
 					alert("ERROR: El stock debe ser un número positivo con decimales")
 				
 				return
 				
 				}
 
+				if(precio =="" || precio <0 || parseFloat(precio)==NaN){
+				
+					alert("ERROR: El stock debe ser un número positivo con decimales")
+
+					return
+				}
+
 				if (disponible == undefined) {
+				
 					alert("Error: Debe especificar la disponibilidad")
 
 				return
+				
 				}
+
 				let precioFinal = precio * 1.21
+
 				/* Desenlace */
 				//let msg = `<p>El producto <strong>${nombre}</strong> vale ARS ${precioFinal} la unidad</p>` //<-- Template String
+				
 				//document.querySelector("#productos").insertAdjacentHTML("afterend", msg)
+
 				let fila = document.createElement("tr")
 
 				let celda1 = document.createElement("td")
@@ -68,13 +84,13 @@
 				celda1.innerText = nombre
 				celda2.innerText = stock + "unid."
 				celda3.innerText = `$${precioFinal.toFixed(2)}`
-
+				/*
 				if(disponible == true){
 					celda4.innerText = "Siii!"
 				} else {
 					celda4.innerText = "Nooo!"
 				}
-
+				*/
 				/* Operador ternario*/
 				//Variable = (CONDICION) ? Valor Verdadero : Valor Falso
 				celda4.innerText = disponible ? "SI" : "NO"
